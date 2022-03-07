@@ -19,7 +19,7 @@ class Book extends Product
     {
         return $this->weight = $weight;
     }
-    public function getSize()
+    public function getSize() //polymorphism
     {
         return null;
     }

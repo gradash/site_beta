@@ -75,7 +75,7 @@ abstract class Product implements Persistable
         return $this->price = $price;
     }
 
-    abstract function getSize(); //just to show abstract and polymorphism (realised in furniture) :)
+    abstract function getSize(); // to show abstract and polymorphism (realised in furniture)
 
     public function persistFields(): array
     {

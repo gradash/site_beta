@@ -40,7 +40,7 @@ class Furniture extends Product
         return $this->length = $length;
     }
 
-    public function getSize() //just to show polymorphism :)
+    public function getSize() //polymorphism
     {
         return $this->height . 'x' .$this->width . 'x' . $this->length;
     }
