@@ -31,7 +31,7 @@ class DB
 
     public function showAll()
     {
-        $query = self::$connection->query('SELECT * FROM shopDB ORDER BY sku');
+        $query = self::$connection->query('SELECT * FROM shopDB ORDER BY sku ASC');
         $products = [];
         $all = $query->fetchAll();
         foreach ($all as $row) {
