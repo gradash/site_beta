@@ -1,6 +1,6 @@
 <?php
 
-require_once 'Db.php';
+require_once './Util/Db.php';
 
 $db = new Db();
 $products = $db->showAll();

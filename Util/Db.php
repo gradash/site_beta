@@ -1,8 +1,8 @@
 <?php
-require_once "Product.php";
-require_once "Dvd.php";
-require_once "Book.php";
-require_once "Furniture.php";
+require_once "./Entity/Product.php";
+require_once "./Entity/Dvd.php";
+require_once "./Entity/Book.php";
+require_once "./Entity/Furniture.php";
 
 class DB
 {

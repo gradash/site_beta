@@ -21,6 +21,6 @@ class Book extends Product
     }
     public function getSize() //polymorphism
     {
-        return null;
-    }
+    return null;
+}
 }

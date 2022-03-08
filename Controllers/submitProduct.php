@@ -14,12 +14,10 @@ if ($_POST) {
     }
     try {
         $x->persist();
-                header('Location: /');
-                
+        header('Location: /');
+
     } catch (Exception $e) {
         echo "Sorry, this SKU already exists.";
     }
-
-    
 
 }
