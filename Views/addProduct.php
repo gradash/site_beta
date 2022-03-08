@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <title>Add Product</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./Views/style.css">
 </head>
 
 <body>

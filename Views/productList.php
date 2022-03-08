@@ -13,7 +13,7 @@ $products = $db->showAll();
 <head>
     <meta charset="utf-8">
     <title>Product List</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./Views/style.css">
 </head>
 
 <body>
