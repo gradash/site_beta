@@ -1,6 +1,5 @@
 <?php
 ini_set('display_errors', 1);
-//print_r($_POST);
 
 interface Persistable
 {
@@ -89,7 +88,7 @@ abstract class Product implements Persistable
     }
     public function persistTable(): string
     {
-        return 'shopdb';
+        return 'shopDB';
     }
 
 }

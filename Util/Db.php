@@ -6,14 +6,14 @@ require_once "./Entity/Furniture.php";
 
 class DB
 {
-    private $user = "root";
-    private $pass = "";
+    private $user = "id18466934_pollux";
+    private $pass = "sOEc&ErAxHS4o";
     private static $connection;
 
     public function __construct()
     {
         if (!self::$connection) {
-            self::$connection = new PDO('mysql:host=localhost;dbname=myshop', $this->user, $this->pass);
+            self::$connection = new PDO('mysql:host=localhost;dbname=id18466934_shop', $this->user, $this->pass);
             self::$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }
     }
@@ -23,7 +23,6 @@ class DB
         $keys = implode(",", array_keys($object->persistFields()));
         $values = ":" . implode(",:", array_keys($object->persistFields()));
         $query = 'INSERT ' . ' INTO ' . $object->persistTable() . ' (' . $keys . ') VALUES (' . $values . ')';
-        //var_dump($object); die;
         $stmt = self::$connection->prepare($query);
         $stmt->execute($object->persistFields());
 
@@ -46,14 +45,13 @@ class DB
             }
 
         }
-        //var_dump($products);
+        
         return $products;
     }
 
     public function massDelete($key)
     {
         $query = ('DELETE FROM shopDB WHERE id = (' . $key . ')');
-        //var_dump($query); die;
         $stmt = self::$connection->prepare($query);
         $stmt->execute();
 
